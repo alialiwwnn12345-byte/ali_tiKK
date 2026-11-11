@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع علي للدقة والجودة © 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.min.js"></script>
+    <style>
+        :root {
+            --bg-dark: #070913;
+            --card-bg: rgba(13, 18, 36, 0.75);
+            --neon-blue: #00d2ff;
+            --neon-blue-glow: rgba(0, 210, 255, 0.4);
+            --accent-red: #ff2a5f;
+            --accent-red-glow: rgba(255, 42, 95, 0.4);
+            --text-main: #f0f4f8;
+            --text-dim: #8a99ad;
+            --border-color: rgba(0, 210, 255, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(0, 210, 255, 0.15) 0%, transparent 60%),
+                linear-gradient(rgba(255, 42, 95, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 210, 255, 0.03) 1px, transparent 1px);
+            background-size: 100% 100%, 30px 30px, 30px 30px;
+            color: var(--text-main);
+            min-height: 100vh;
+            padding-bottom: 90px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 20px 16px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 210, 255, 0.1);
+            border: 1px solid var(--neon-blue);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--neon-blue);
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            box-shadow: 0 0 10px var(--neon-blue-glow);
+        }
+
+        .badge .dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--neon-blue);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--neon-blue);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            margin-bottom: 6px;
+        }
+
+        p.subtitle {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            line-height: 1.4;
+        }
+
+        /* Card System */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-blue));
+        }
+
+        .section-tag {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            color: var(--accent-red);
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+            display: block;
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+
+        /* Toggle Buttons
